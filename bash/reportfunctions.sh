@@ -62,3 +62,18 @@ function networkreport() {
     echo "=============================="
     # Add commands to get network information and display labeled data here
 }
+# Function to display help for the script
+function display_help() {
+    echo "Usage: $0 [-h] [-v] [-system] [-disk] [-network]"
+    echo "Options:"
+    echo "  -h         Display help and exits."
+    echo "  -v         Run the script verbosely, showing errors to the user."
+    echo "  -system    Run only computer, OS, CPU, RAM, and video reports."
+    echo "  -disk      Run only the disk report."
+    echo "  -network   Run only the network report."
+}
+
+# Function to enable verbose mode
+function enable_verbose() {
+    verbose=true
+}
